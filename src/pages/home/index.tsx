@@ -13,14 +13,12 @@ export const Home = () => {
 
   return (
     <View style={styles.container}>
-      {/* Botão de menu */}
       <IconButton
         icon="menu"
         onPress={() => setShowOptions(true)}
         style={styles.menuButton}
       />
 
-      {/* Modal para exibir as opções */}
       <Modal
         visible={showOptions}
         transparent={true}
@@ -41,7 +39,6 @@ export const Home = () => {
         </View>
       </Modal>
 
-      {/* Conteúdo principal */}
       <Card style={styles.componente}>
         <Text style={styles.paragraph}>
           {selectedOption
